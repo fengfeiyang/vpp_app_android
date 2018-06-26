@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="defaut_bg">#F9FAFC</color>
+    <color name="textColor">#202020</color>
+    <color name="textColorHint">#A0A0A0</color>
+    <color name="color_divider">#EEEEEE</color>
+    <color name="color_E0">#E0E0E0</color>
+    <color name="color_gray">#CFCFD8</color>
+    <color name="color_green">#60c861</color>
+    <color name="color_red">#f32e00</color>
+    <color name="color_yellow">#ffd600</color>
+    <color name="tran">#00ffffff</color>
+    <color name="tran_66">#66000000</color>
+
+    <color name="color_bule_hover">#1492e3</color>
+
+    <color name="tv_hint">#D9DCE0</color>
+    <color name="tv_blue">#1BA5FD</color>
+    <color name="tv_3">#3F4D68</color>
+    <color name="tv_5">#565F80</color>
+    <color name="tv_6">#626262</color>
+    <color name="tv_9">#9DA1A9</color>
+    <color name="tv_0">#000a2e</color>
+    <color name="tv_0_tip">#00002C</color>
+    <color name="tv_gray">#CFCFD8</color>
+    <color name="tv_orange">#FF820C</color>
+
+
+    <color name="bg_gray">#CFCFD8</color>
+    <color name="bg_blue">#269DD8</color>
+    <color name="bg_blue_order">#1BA5FD</color>
+    <color name="bg_greed_order">#06D4B6</color>
+    <color name="bg_yellow_order">#FFD65F</color>
+    <color name="list_line">#EEEEEE</color>
+    <color name="edit_focus">#EEEEEE</color>
+    <color name="coin_tab_bg">#F4F3F3</color>
+    <color name="btn_red">#FE3762</color>
+    <color name="btn_red_enabled">#80FE3762</color>
+    <color name="btn_greed">#06D4B6</color>
+    <color name="btn_greed_pressed">#8006D4B6</color>
+
+
+</resources>

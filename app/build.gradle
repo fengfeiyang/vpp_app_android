@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.baotianqi.valpromise"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 211
+        versionName "2.1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            buildConfigField "Boolean", "ENVIRONMENT", "false"
+
+            applicationVariants.all { variant ->
+                variant.outputs.all {
+                    def fileName = "ValPromise_v${defaultConfig.versionName}_debug.apk"
+                    if (outputFileName.endsWith('.apk')) {
+                        //这里使用之前定义apk文件名称
+                        outputFileName = fileName
+                    }
+                }
+            }
+        }
+        release {
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "Boolean", "ENVIRONMENT", "true"
+
+            applicationVariants.all { variant ->
+                variant.outputs.all {
+                    def fileName = "ValPromise_v${defaultConfig.versionName}_release.apk"
+                    if (outputFileName.endsWith('.apk')) {
+                        //这里使用之前定义apk文件名称
+                        outputFileName = fileName
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation project(':library:xrecyclerview')
+    implementation project(':library:http')
+    implementation project(':library:custom')
+    implementation project(path: ':library:zoomlibrary')
+    testCompile "junit:junit:$rootProject.ext.junitVersion"
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+    //二维码相关
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'com.yangy:YZxing-lib:2.1'
+
+    //SwipyRefreshLayout
+    compile 'com.github.orangegangsters:swipy:1.2.3@aar'
+
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+
+
+
+}

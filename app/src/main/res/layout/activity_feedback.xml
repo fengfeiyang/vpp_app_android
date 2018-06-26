@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/defaut_bg"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/color_divider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="问题和建议"
+            android:textColor="@color/tv_3"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_input_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shape_ee_rec"
+                android:gravity="left|top"
+                android:hint="请输入您宝贵的建议"
+                android:inputType="text"
+                android:maxLength="201"
+                android:padding="10dp"
+                android:textColor="@color/tv_0"
+                android:textColorHint="#D9DCE0"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_text_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="25dp"
+                android:text="0/200"
+                android:textColor="@color/tv_0"
+                android:textSize="13sp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="邮箱"
+            android:textColor="@color/tv_3"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_input_mail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_ee_rec"
+            android:hint="方便我们和您联系"
+            android:inputType="text"
+            android:maxLength="128"
+            android:padding="10dp"
+            android:textColor="@color/tv_0"
+            android:textColorHint="#D9DCE0"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/btn_feedback_commit"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/shape_blue_btn_rec"
+            android:text="@string/str_commit"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</ScrollView>
+

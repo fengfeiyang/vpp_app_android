@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#4fadf6</color>
+    <color name="colorPrimaryHalf">#9003A9F4</color>
+    <color name="colorAccentHalf">#9000E5FF</color>
+
+    <color name="tran_top">#66343434</color>
+    <color name="color_nav_bg">#0f192b</color>
+
+    <color name="color_bule">#1ba5fd</color>
+    <color name="color_bule_text">#1ba5fd</color>
+    <color name="white">#ffffff</color>
+</resources>

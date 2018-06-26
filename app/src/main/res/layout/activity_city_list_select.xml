@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/icon_back"
+            android:paddingLeft="10dp"
+            android:visibility="visible" />
+
+        <com.baotianqi.valpromise.view.CleanableEditView
+            android:id="@+id/cityInputText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35dp"
+            android:layout_toRightOf="@id/imgBack"
+            android:background="@drawable/shape_edittext_bg"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="5dp"
+            android:gravity="left|center_vertical"
+            android:hint="城市搜索"
+            android:textColor="@color/tv_3"
+            android:textColorHint="#cfcfd8"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:divider="@color/color_divider"
+            android:dividerHeight="1px" />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/tv_3"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <com.baotianqi.valpromise.view.sortlistview.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center"
+            android:layout_marginTop="50dp" />
+    </FrameLayout>
+</LinearLayout>

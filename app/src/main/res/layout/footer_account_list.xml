@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:background="@drawable/shape_blue_btn_rec"
+        android:gravity="center"
+        android:text="新增地址"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:lineSpacingExtra="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="提示：\n1.地址为任意支持erc20协议的地址,都可以作为提现地址；\n2.提现后最晚24小时内完成转账；\n3.若超过本时间未查询到账，请通过APP内“账户-反馈”进行反馈。"
+        android:textColor="@color/tv_9"
+        android:textSize="12sp" />
+
+</LinearLayout>

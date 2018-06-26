@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="热门城市"
+        android:textColor="@color/tv_9"
+        android:textSize="12sp" />
+
+    <GridView
+        android:id="@+id/gv_citys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:columnWidth="77dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:stretchMode="spacingWidth"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>

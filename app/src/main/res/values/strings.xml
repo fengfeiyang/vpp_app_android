@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">ValPromise</string>
+
+    <string name="str_home">首页</string>
+    <string name="str_trade">交易</string>
+    <string name="str_account">账户</string>
+
+    <string name="str_recharge">充值</string>
+    <string name="str_withdraw">提现</string>
+
+    <string name="str_commit">提交</string>
+
+    <string name="str_exit">再按一次退出程序</string>
+
+    <string name="str_no_acccount">没有账户，立即注册</string>
+
+    <string name="hint_country_is_empty">请选择国家区号</string>
+    <string name="hint_phone_is_empty">手机号不能为空</string>
+    <string name="hint_phone_is_err">请输入正确的手机号码</string>
+    <string name="hint_code_is_empty">验证码不能为空</string>
+    <string name="hint_code_is_err">请输入正确的验证码</string>
+    <string name="hint_password_is_empty">密码不能为空</string>
+    <string name="hint_password_is_err">密码不能小于6位</string>
+    <string name="hint_pay_password_is_empty">支付密码不能为空</string>
+    <string name="hint_pay_password_is_err">支付密码不能小于6位</string>
+
+
+    <string name="str_start">开始</string>
+    <string name="str_launcher_new">新世界的大门即将为你敞开</string>
+    <string name="str_launcher_ver">V0.1.0.4 R2018</string>
+
+
+    <string name="str_account_uuid">UID %d</string>
+    <string name="str_account_balance">≈ ¥ %s</string>
+
+    <string name="str_rechange_explain">
+        1.请勿向该地址充值除VPP之外的资产，任何充入VPP地址的非VPP资产将不可找回。
+        \n2.VPP充值需要30个网络确认才可到账。具体到账时间将以网络繁忙度而定，一般在30min以内。
+        \n3.最小充值VPP金额为1VPP。
+    </string>
+
+    <string name="str_trade_explain">
+        气象局公布气温数据后合约将自动执行判定，如果您选择正确，收益将直接进入您的账户。
+        天气数据以中国气象局北京气象站(编号:%s)数据为准，合约开始时间为0:00，结束时间为23:59。
+    </string>
+
+    <string name="str_have_acccount">已有账号，立即登录</string>
+    <string name="str_researching">功能研发中,敬请期待</string>
+
+
+    <string name="str_purchase_title">购买合约</string>
+    <string name="str_purchase_balance_add">+%s</string>
+    <string name="str_purchase_balance_reduce">-%s VPP</string>
+    <string name="str_success">成功</string>
+    <string name="str_purchase_order_no">订单号 : %s</string>
+    <string name="str_purchase_prouct">产品名 : %s</string>
+    <string name="str_purchase_pid">产品ID : %s</string>
+
+    <string name="str_performs_title">履行合约</string>
+
+    <string name="str_recharge_title">VPP充值</string>
+
+    <string name="str_withdrawals_title">VPP提现</string>
+
+    <string name="str_recharge_vpp_addr">充值地址 : %s</string>
+
+    <string name="str_withdrawals_vpp_addr">提现地址 : %s</string>
+
+
+    <string name="str_default_notice">ValPromise公测正在进行中，欢迎大家踊跃参加</string>
+
+    <string name="str_order_detail_no">订单号 : %s</string>
+    <string name="str_order_detail_status">合约状态 : %s</string>
+
+    <string name="str_order_detail_city">%s</string>
+    <string name="str_order_detail_time">时间 : %s</string>
+    <string name="str_order_detail_live">天气实况数据 : %s</string>
+
+    <string name="str_order_detail_subject">%s最高温度</string>
+    <string name="str_order_detail_standard">日最高温 %s</string>
+    <string name="str_order_detail_profit">%s VPP</string>
+    <string name="str_order_detail_num">%s</string>
+    <string name="str_order_detail_price">%s VPP</string>
+    <string name="str_order_detail_amount">%s</string>
+
+
+    <string name="str_invite_tip_1">每邀请一位好友注册并登录APP，您和好友可以各获得30VPP，最高可得300VPP。</string>
+    <string name="str_invite_tip_2">2. 您的邀请码总次数为10次，超过此次数后任然可以邀请，但不再继续获得APP。</string>
+</resources>
+
+
+

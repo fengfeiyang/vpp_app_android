@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+
+    api "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+    api "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    api "com.android.support:support-v13:$rootProject.supportLibraryVersion"
+    api "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+    //rx管理View的生命周期
+    api("com.trello.rxlifecycle2:rxlifecycle:2.2.1")
+    api("com.trello.rxlifecycle2:rxlifecycle-components:2.2.1")
+    //rxbinding
+    api("com.jakewharton.rxbinding2:rxbinding:2.1.1")
+    //material-dialogs
+    api("com.afollestad.material-dialogs:core:0.9.4.5")
+    api("com.afollestad.material-dialogs:commons:0.9.4.5")
+    //glide图片加载库
+    api("com.github.bumptech.glide:glide:4.7.1")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.7.1")
+    //butterknife
+//    implementation 'com.jakewharton:butterknife:8.8.1'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    compile 'com.zhy:base-rvadapter:3.0.3'
+
+    //友盟统计
+    compile 'com.umeng.sdk:common:1.5.0'
+    compile 'com.umeng.sdk:analytics:7.5.0'
+    //socket
+    compile 'com.dhh:rxlifecycle2:1.6'
+    api('com.dhh:websocket2:2.1.2')
+
+}
